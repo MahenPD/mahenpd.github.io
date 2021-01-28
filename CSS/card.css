@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@font-face {
+  font-family: "CoreCircus2DDot1";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2")
+      format("woff2"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff")
+      format("woff"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "CoreCircus";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2")
+      format("woff2"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff")
+      format("woff"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf")
+      format("truetype");
+}
+
+.card {
+  background-color: #fc0;
+  /* background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%); */
+  /* border-radius: 4px; */
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.75);
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  /* border-radius: 25px; */
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 18px;
+  font-family: "CoreCircus", sans-serif;
+}
+
+.card .title {
+  padding: 1rem;
+  text-align: right;
+  color: rgb(103, 14, 150);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.card .desc {
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1.4px;
+}
+
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+  padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+path {
+  fill: white;
+}
+
+.img-portada {
+}
+
+.portada {
+  /* width: 100%;
+  height: 100%; */
+  /* border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px; */
+  /* background-position: bottom center;
+  background-size: cover; */
+}
+
+.cardRow1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 100px;
+}

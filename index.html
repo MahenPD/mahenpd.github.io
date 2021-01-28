@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahen Dunusinghe | Portfolio </title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="./JS/jquery.onepage-scroll.js"></script>
+    <link href='./CSS/onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <link href='./CSS/index.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/background.css">
+    <link rel="stylesheet" href="./CSS/button.css">
+    <link rel="stylesheet" href="./CSS/images.css">
+    <link rel="stylesheet" href="./CSS/index_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script rel="text/javascript" src="./JS/navbar.js"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $(".main").onepage_scroll({
+                sectionContainer: "section",
+                responsiveFallback: 600,
+                loop: false
+            });
+            document.getElementById("aboutMeImg").onclick = function () {
+                location.href = "about.html";
+            };
+            document.getElementById("projectImg").onclick = function () {
+                location.href = "projects.html";
+            };
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay_menu"></div>
+        <div class="menu_container">
+            <nav>
+                <h1 class="brand"><a href="index.html">Mahen<span>P</span>D</a></h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+
+    <div class="wrapper">
+        <div class="main">
+            <section class="page1" id="home">
+                <div class="page_container">
+                    <h1 class="mainHeaders" data-heading="MAHEN"></h1>
+                    <span data-heading="DUNUSINGHE"></span>
+                    <!-- <div class="rectangle"></div>
+                    <div class="rectangle right"></div> -->
+                    <div class="subHeading">
+                        <h2>FullStack Developer / <br> Mobile Application Developer <br></h2>
+                        <h2 class="mb-5"> Always up for anything... </h3>
+                    </div>
+                </div>
+
+                <div class="ripple-background">
+                    <div class="circle xxlarge shade1"></div>
+                    <div class="circle xlarge shade2"></div>
+                    <div class="circle large shade3"></div>
+                    <div class="circle mediun shade4"></div>
+                    <div class="circle small shade5"></div>
+                </div>
+
+            </section>
+
+            <section class="page2">
+                <div class="page_container" id="about">
+                    <div class="aboutSection">
+                        <h1 class="mainHeaders" data-heading="ABOUT ME"></h1>
+                        <h2> I love the inner workings of all things <br> and the technology behind them.</h2>
+                        <a id="aboutMeImg" class="horizontal"><span class="text">Read More</span></a>
+                    </div>
+                    <div class="promo mt-5" style="--overlay-color: hotpink">
+                        <a href="./about.html">
+                            <div class="image-wrapper">
+                                <img
+                                    src="https://images.unsplash.com/photo-1554620121-59e7f3f6e3a4?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=800&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" />
+                            </div>
+                            <h2 class="title" data-cta="Click Me →">Who I Am</h2>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page3">
+                <div class="page_container" id="projects">
+                    <div class="aboutSection">
+                        <h1 class="mainHeaders" data-heading="PROJECTS"></h1>
+                        <h2> Completed / Upcoming Projects and Ideas </h2>
+                        <a class="horizontal" id="projectImg"><span class="text">Read More</span></a>
+                    </div>
+                    <div class="promo" style="--overlay-color: grey">
+                        <a href="./projects.html">
+                            <div class="image-wrapper">
+                                <img src="./Images/work.jpg" />
+                            </div>
+                        </a>
+                        <h2 class="title" a href data-cta="Click Me →">Ideas</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page4">
+                <div class="page_container" id="contact">
+                    <div class="aboutSection">
+                        <h1 class="mainHeaders" data-heading="CONTACT"></h1>
+                        <h2> Completed / Upcoming Projects and Ideas </h2>
+                        <footer class="footer">
+                            <ul>
+                                <li>
+                                    <a class="facebook" href="#">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="instagram" href="#">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="google" href="#">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </footer>
+                    </div>
+                    <div class="promo" style="--overlay-color: hotpink">
+                        <a href="">
+                            <div class="image-wrapper">
+                                <img
+                                    src="https://images.unsplash.com/photo-1554620121-59e7f3f6e3a4?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=800&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" />
+                            </div>
+                        </a>
+                        <h2 class="title" data-cta=" →">Hire Me</h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11278966-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-11278966-3');
+    </script> -->
+
+</body>
