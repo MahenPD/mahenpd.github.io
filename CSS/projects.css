@@ -58,8 +58,7 @@ p {
 /* Bottom Card Section */
 
 .property-description {
-  background-color: #b3cdd1;
-  background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+  background-color: #000000;
   /* background-color: #4a4aae; */
   height: 20em;
   width: 14em;
@@ -86,16 +85,15 @@ p {
 .property-image-title {
   text-align: center;
   position: Relative;
-  top: 30%;
-  opacity: 0;
+  margin-top: 30px;
+  opacity: 1;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-  color: black;
-  font-size: 1.2em;
-  font-family: Righteous;
+  color: rgb(255, 255, 255);
+  font-size: 0.69em;
 }
 
 .property-card:hover .property-image-title {
-  opacity: 1;
+  opacity: 0;
 }
 
 .cardDeck {
@@ -104,8 +102,7 @@ p {
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-  background-color: #b3cdd1;
-  background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+  background-color: #fc0;
 }
 
 .header-card {
