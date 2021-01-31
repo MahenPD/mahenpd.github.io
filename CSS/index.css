@@ -34,13 +34,15 @@
   color: aliceblue;
 }
 
+.contactSection > h2 {
+  font-size: 25px;
+  color: aliceblue;
+}
+
 .page_container {
   padding: 5%;
   justify-content: center;
   align-items: center;
-}
-
-.page1 {
 }
 
 .subHeading {
@@ -177,6 +179,17 @@ html {
   animation: flicker 3s linear infinite;
 }
 
+.contactSection > .mainHeaders:before {
+  content: attr(data-heading);
+  position: relative;
+  overflow: hidden;
+  color: #fc0;
+  width: 100%;
+  text-shadow: none;
+  left: 110px;
+  animation: flicker 3s linear infinite;
+}
+
 .page_container > span {
   font-family: "CoreCircus", sans-serif;
   text-align: left;
@@ -226,7 +239,6 @@ html {
   }
 }
 
-
 @font-face {
   font-family: "CoreCircus2DDot1";
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot");
@@ -239,6 +251,7 @@ html {
     url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf")
       format("truetype");
 }
+
 @font-face {
   font-family: "CoreCircus";
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot");
@@ -255,3 +268,12 @@ html {
 .aboutSection {
   margin-top: 100px;
 }
+
+.contactSection {
+  margin-top: 100px;
+}
+
+.title {
+  color: white;
+}
+
