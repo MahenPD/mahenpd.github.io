@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.skill{
+.skill {
   display: flex;
   align-items: center;
   min-width: 300px;
@@ -34,9 +34,6 @@
   height: 60px;
   width: 50px;
   margin-right: 10px;
-}
-
-.edu {
 }
 
 @keyframes load {
@@ -75,11 +72,8 @@
 .bar::before {
   content: attr(data-skill);
   background-color: #756213;
-background-image: linear-gradient(315deg, #bb9b1b 24%, #000000 54%);
+  background-image: linear-gradient(315deg, #bb9b1b 24%, #000000 54%);
 
-  /* background-color: #1fd1f9;
-  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%); */
-  
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
