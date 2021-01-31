@@ -115,3 +115,15 @@ p {
   line-height: 15px;
   text-align: center;
 }
+
+.projectLinks > a > i {
+  background-color: #000000;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.projectLinks {
+  text-align: center;
+  padding: 15px;
+}
