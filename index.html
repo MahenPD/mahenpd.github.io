@@ -21,9 +21,12 @@
     <link rel="stylesheet" href="./CSS/images.css">
     <link rel="stylesheet" href="./CSS/button.css">
     <link rel="stylesheet" href="./CSS/index_footer.css">
+    <link rel="stylesheet" href="./CSS/loader.css">☻
+    <script rel="text/javascript" src="./JS/navbar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="./JS/jquery.onepage-scroll.js"></script>
-    <script rel="text/javascript" src="./JS/navbar.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -33,10 +36,24 @@
                 loop: false
             });
         });
+
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".loader").fadeOut("slow");;
+        });
     </script>
 </head>
 
 <body>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Loading</span>
+    </div>
     <header>
         <div class="menu-toggle" id="hamburger">
             <i onclick="menuOpen()" class="fas fa-bars"></i>
