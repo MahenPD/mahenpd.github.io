@@ -1,49 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahen Dunusinghe | About Me</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./CSS/about.css">
+    <link rel="stylesheet" href="./CSS/card.css">
+    <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/skillbar.css">
     <link rel="stylesheet" href="./CSS/footer.css">
-    <link rel="stylesheet" href="./CSS/card.css">
-    <link rel="stylesheet" href="./CSS/backarrow.css">
-    <link rel="stylesheet" href="./CSS/navbar.css">
-    <link rel="stylesheet" href="./CSS/headerArrows.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script rel="text/javascript" src="./JS/navbar.js"></script>
 </head>
 
 <body>
-
     <header>
         <div class="menu-toggle" id="hamburger">
-            <i class="fas fa-bars"></i>
+            <i onclick="menuOpen()" class="fas fa-bars"></i>
         </div>
-        <div class="overlay_menu"></div>
-        <div class="menu_container">
+        <div class="overlay"></div>
+        <div class="container">
             <nav>
                 <h1 class="brand"><a href="index.html">Mahen<span>P</span>D</a></h1>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class='container'>
-        <div id="arrow_2" class="arrow-wrapper">
-            <div class="arrow arrow--left">
-                <a href="./index.html" style="text-decoration: none;">
-                    <span>Go Back</span>
-                </a>
-            </div>
-        </div>
-        <div class="container_content">
+    <section class="bgColor">
+        <div class='main_container'>
             <div class="container_content_inner">
                 <div class="title">
                     <h1>ABOUT ME</h1>
@@ -51,8 +43,8 @@
                 <div class="par">
                     <p>
                         The day I started designing IT solutions in a small notebook aspiring
-                        to be the next Steve Jobs,I knew my future career was carved in
-                        stone.The endless possibilities one could create using a few lines of
+                        to be the next Steve Jobs, I knew my future career was carved in
+                        stone. The endless possibilities one could create using a few lines of
                         English and the unimaginable potential of the field of technology
                         has always fascinated me. My dream is to contribute to this rapidly
                         changing world with new and innovative technology and to
@@ -60,51 +52,36 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="container_outer_img">
-            <div class="container__profileCard">
-                <div class="wrapper">
-                    <a href="#">
-                        <img src="./Images/Profile Pic.JPG" height="250px" width="250px" alt="" />
-                    </a>
-                    <div class="title">Mahen Dunusinghe</div>
-                    <div class="place">Sri Lanka, Colombo 05</div>
-                </div>
-                <div class="content">
-                    <p>FullStack Developer <br> Data Scientist</p>
+            <div class="container_outer_img">
+                <div class="container__profileCard">
+                    <div class="wrapper">
+                        <a href="#">
+                            <img src="./assets/Profile Pic.JPG" height="250px" width="250px" alt="" />
+                        </a>
+                        <div class="title">Mahen Dunusinghe</div>
+                        <div class="place">Sri Lanka, Colombo 05</div>
+                    </div>
+                    <div class="content">
+                        <p>FullStack Developer <br> Data Scientist</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+
 
     <div class="whoIAm">
         <div class="headerstyle">
             <h1 class="edu">EDUCATION & EXPERIENCE </h1>
-            <!-- <div class="wrapper__arrow">
-                <svg width="14px" height="12px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g>
-                        <polygon class="arrow"
-                            points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                        </polygon>
-                        <polygon class="arrow-fixed"
-                            points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                        </polygon>
-                        <path
-                            d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
-                        </path>
-                    </g>
-                </svg>
-            </div> -->
         </div>
         <div class="cardRow1">
             <div class="card">
                 <div class="card-text">
                     <div class="title-total">
                         <div class="cardAvatar">
-                            <img src="./Images/school.png" alt="">
+                            <img src="./assets/school.png" alt="">
                         </div>
-                        <!-- <div class="title">School</div> -->
                         <h2>S.Thomas' College</h2>
                         <div class="desc">Ordinary Level Exam : 5A's 2B's C <br> Interact Club (2016 - 2017) <br>
                             MediaClub(2017)
@@ -117,11 +94,11 @@
                 <div class="card-text">
                     <div class="title-total">
                         <div class="cardAvatar">
-                            <img src="./Images/university.png" alt="">
+                            <img src="./assets/university.png" alt="">
                         </div>
-                        <!-- <div class="title">University</div> -->
                         <h2>Informatics Institute of Technology</h2>
-                        <div class="desc">Foundation Certificate of Higher Education (2017/2018) <br> Bsc. Hns Software
+                        <div class="desc">Foundation Certificate of Higher Education (2017/2018) <br> Bsc. Hns
+                            Software
                             Engineering (2018 - 2022)</div>
                     </div>
                 </div>
@@ -130,14 +107,15 @@
                 <div class="card-text">
                     <div class="title-total">
                         <div class="cardAvatar">
-                            <img src="./Images/rotaractlogo.png" alt="">
+                            <img src="./assets/rotaractlogo.png" alt="">
                         </div>
-                        <!-- <div class="title">Rotaract</div> -->
                         <h2>Rotaract Club Of IIT</h2>
-                        <div class="desc">Rotaract Club of IIT (2017 - Present) <br> Board Member - Community Service
+                        <div class="desc">Rotaract Club of IIT (2017 - Present) <br> Board Member - Community
+                            Service
                             Director (2019/2020) <br> Lead Editor (2018) <br> Striving for a Miracle - Project Chair
                             (2020)
-                            <br> HotDog Showdown 2020 - Organizing Committe <br> Project Beyond Braille - Project Chair
+                            <br> HotDog Showdown 2020 - Organizing Committe <br> Project Beyond Braille - Project
+                            Chair
                             (2019)
                         </div>
                     </div>
@@ -147,14 +125,13 @@
                 <div class="card-text">
                     <div class="title-total">
                         <div class="cardAvatar">
-                            <img src="./Images/school.png" alt="">
+                            <img src="./assets/school.png" alt="">
                         </div>
-                        <!-- <div class="title">Rotaract</div> -->
                         <h2>E-Consulate</h2>
-                        <div class="desc">Trainee Software Engineer 
+                        <div class="desc">Trainee Software Engineer
                             <br> Main Project - SCM Studio
                             <br> Tech Stack: React JS, NodeJS, Redux and Saga
-                            <br> Received experience in AWS and Postgres  
+                            <br> Received experience in AWS and Postgres
                             <br> QA Exposure
                             <br> Experimented with Python and Vue JS
                         </div>
@@ -164,87 +141,67 @@
         </div>
     </div>
 
-    <div class="skills">
-        <div class="headerstyle">
-            <h1 class="edu">SKILL SET </h1>
-            <!-- <div class="wrapper__arrow">
-                <svg width="14px" height="12px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g>
-                        <polygon class="arrow"
-                            points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                        </polygon>
-                        <polygon class="arrow-fixed"
-                            points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                        </polygon>
-                        <path
-                            d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
-                        </path>
-                    </g>
-                </svg>
-            </div> -->
-        </div>
-        <div class="containerSkill">
-            <div class="skillSection1">
-                <div class="skill">
-                    <div class="skill__img">
-                        <img src="./Images/js.png" alt="">
+    <section class="bgColor">
+        <div class="skills">
+            <div class="headerstyle skill">
+                <h1>TECHNICAL EXPERTISE</h1>
+            </div>
+            <div class="containerSkill">
+                <div class="skillSection1">
+                    <div class="skill">
+                        <div class="skill__img">
+                            <img src="./assets/js.png" alt="">
+                        </div>
+                        <div class="bar advanced" data-skill="JavaScript"> 90% </div>
                     </div>
-                    <div class="bar advanced" data-skill="JavaScript"> 90% </div>
+                    <div class="skill">
+                        <div class="skill__img">
+                            <img src="./assets/reactjs.png" alt="">
+                        </div>
+                        <div class="bar advanced" data-skill="ReactJs"> 90%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__img">
+                            <img src="./assets/nodejs.png" alt="">
+                        </div>
+                        <div class="bar learning" data-skill="NodeJs"> 65%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__img">
+                            <img src="./assets/python.png" alt="">
+                        </div>
+                        <div class="bar basic" data-skill="Python"> 75%</div>
+                    </div>
                 </div>
-                <div class="skill">
-                    <div class="skill__img">
-                        <img src="./Images/reactjs.png" alt="">
+                <div class="skillSection2">
+                    <div class="skill">
+                        <div class="skill__img">
+                            <img src="./assets/photoshop.png" alt="">
+                        </div>
+                        <div class="bar intermediate less" data-skill="Photoshop"> 80%</div>
                     </div>
-                    <div class="bar advanced" data-skill="ReactJs"> 90%</div>
-                </div>
-                <div class="skill">
-                    <div class="skill__img">
-                        <img src="./Images/nodejs.png" alt="">
+                    <div class="skill">
+                        <div class="skill__img">
+                            <img src="./assets/vuejs-1175052.png" alt="">
+                        </div>
+                        <div class="bar learning" data-skill="VueJs"> 65%</div>
                     </div>
-                    <div class="bar learning" data-skill="NodeJs"> 65%</div>
-                </div>
-                <div class="skill">
-                    <div class="skill__img">
-                        <img src="./Images/python.png" alt="">
+                    <div class="skill">
+                        <div class="skill__img">
+                            <img src="./assets/firebase.png" alt="">
+                        </div>
+                        <div class="bar intermediate" data-skill="FireBase"> 85%</div>
                     </div>
-                    <div class="bar basic" data-skill="Python"> 75%</div>
+                    <div class="skill">
+                        <div class="skill__img">
+                            <img src="./assets/java.png" alt="">
+                        </div>
+                        <div class="bar intermediate" data-skill="Java"> 85%</div>
+                    </div>
                 </div>
             </div>
-            <div class="skillSection2">
-                <div class="skill">
-                    <div class="skill__img">
-                        <img src="./Images/photoshop.png" alt="">
-                    </div>
-                    <div class="bar intermediate less" data-skill="Photoshop"> 80%</div>
-                </div>
-                <div class="skill">
-                    <div class="skill__img">
-                        <img src="./Images/vuejs-1175052.png" alt="">
-                    </div>
-                    <div class="bar learning" data-skill="VueJs"> 65%</div>
-                </div>
-                <div class="skill">
-                    <div class="skill__img">
-                        <img src="./Images/firebase.png" alt="">
-                    </div>
-                    <div class="bar intermediate" data-skill="FireBase"> 85%</div>
-                </div>
-                <div class="skill">
-                    <div class="skill__img">
-                        <img src="./Images/java.png" alt="">
-                    </div>
-                    <div class="bar intermediate" data-skill="Java"> 85%</div>
-                </div>
-
-
-
-
-            </div>
         </div>
-    </div>
-
-    <div class="overlay"></div>
+    </section>
 
     <footer>
         <ul class="footerList">
@@ -290,12 +247,5 @@
     </footer>
 
 </body>
-
-<script>
-    const img = document.querySelector("img");
-    img.onclick = function () {
-        this.classList.toggle("active");
-    }
-</script>
 
 </html>

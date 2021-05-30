@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 @font-face {
   font-family: "CoreCircus2DDot1";
@@ -29,8 +29,6 @@
 
 .card {
   background-color: #fc0;
-  /* background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%); */
-  /* border-radius: 4px; */
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.75);
@@ -39,7 +37,7 @@
   display: flex;
   flex-direction: row;
   /* border-radius: 25px; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .card h2 {
@@ -63,7 +61,7 @@
   margin-bottom: 20px;
   font-size: 12px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   letter-spacing: 1px;
   font-weight: 500;
 }
@@ -81,21 +79,39 @@ path {
   fill: white;
 }
 
-.img-portada {
-}
-
-.portada {
-  /* width: 100%;
-  height: 100%; */
-  /* border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px; */
-  /* background-position: bottom center;
-  background-size: cover; */
-}
-
 .cardRow1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 100px;
+  padding: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+  .whoIAm {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .cardRow1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .headerstyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headerstyle > h1 {
+    text-align: center;
+  }
 }

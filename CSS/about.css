@@ -51,42 +51,44 @@ body {
   right: 0;
   bottom: 0;
   height: 100%;
-  z-index: -10;
+  z-index: 1;
   background-color: var(--contrast-color);
 }
 
-.container {
+.header {
+  background-color: var(--contrast-color);
+}
+
+.main_container {
+  width: 90%;
+  max-width: 120rem;
+  margin: auto;
   display: flex;
-  height: 100vh;
-  justify-content: space-around;
   align-items: center;
+  height: 77vh;
   color: rgb(0, 0, 0);
-  animation: expand 0.8s ease forwards;
   background-color: var(--secondary-color);
-  position: relative;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  animation: expand 0.8s ease forwards;
   transition: all 0.8s ease;
   background-color: #fc0;
 }
 
-.container_content {
-  width: 90%;
-  margin-left: 30px;
-}
-
 .container_content_inner {
-  width: 80%;
-  margin-left: 80px;
+  margin: 60px auto;
+  text-align: justify;
 }
 
 .container_outer_img {
-  margin: 50px;
-  width: 50%;
-  overflow: hidden;
+  max-width: 40rem;
+  margin: 60px 30px;
+  padding-left: 40px;
+  text-align: center;
 }
 
 .container_img {
+  text-align: center;
   width: 100%;
   animation: slideIn 1.5s ease-in-out forwards;
 }
@@ -103,15 +105,9 @@ body {
   animation: slideUp 0.8s ease-in-out forwards 0.8s;
 }
 
-.title {
-  overflow: hidden;
-  height: auto;
-}
-
 .title > h1 {
-  font-size: 90px;
+  font-size: 70px;
   color: var(--contrast-color);
-  margin-bottom: 20px;
   transform: translateY(100px);
   font-family: "CoreCircus", sans-serif;
   animation: slideUp 0.8s ease forwards 0.5s;
@@ -153,23 +149,14 @@ h1 {
   }
 }
 
-.cardRow1 {
-  margin-top: 80px;
-  display: flex;
-  justify-content: center;
-}
-
-.cardRow2 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
+.bgColor {
+  background-color: #fc0;
 }
 
 .headerstyle {
   display: flex;
   align-items: center;
-  padding: 130px;
-  padding-right: 30px;
+  padding: 20px;
 }
 
 .headerstyle > h1 {
@@ -182,9 +169,13 @@ h1 {
 }
 
 .footerText {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "CoreCircus", sans-serif;
+  font-size: 8px;
   color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .container__profileCard {
@@ -193,7 +184,7 @@ h1 {
   overflow: hidden;
   margin: 0 auto;
   border-radius: 50%;
-  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3); */
   transition: all 0.3s ease-in-out;
   background-color: #000000;
 }
@@ -206,7 +197,7 @@ h1 {
 }
 
 .container__profileCard .wrapper img {
-  position: relative;
+  /* position: relative; */
   z-index: 20;
   border-radius: 50%;
   height: 250px;
@@ -223,11 +214,6 @@ h1 {
   margin: 0px auto;
   border: none;
   border-radius: 5px;
-}
-
-.container_outer_img {
-  text-align: center;
-  box-sizing: border-box;
 }
 
 .wrapper .title {
@@ -254,10 +240,11 @@ h1 {
 }
 
 .whoIAm {
+  height: 100vh;
   display: flex;
-  /* background-color: #c5ecf3; */
-  background-color: rgb(0, 0, 0);
-  /* background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%); */
+  width: 90%;
+  max-width: 120rem;
+  margin: auto;
 }
 
 .cardAvatar > img {
@@ -276,4 +263,23 @@ h1 {
 
 .edu {
   color: white;
+}
+
+@media screen and (max-width: 670px) {
+  .title > h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .par > p {
+    text-align: center;
+  }
+
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
 }

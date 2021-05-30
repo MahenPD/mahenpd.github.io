@@ -12,10 +12,10 @@ footer {
   display: flex;
   justify-content: center;
 }
-.footerList .footerListItem {
+.footerListItem {
   list-style: none;
 }
-.footerList .footerListItem a {
+.footerListItem a {
   display: block;
   position: relative;
   width: 50px;
@@ -28,62 +28,62 @@ footer {
   margin: 0 30px;
   transition: 0.5s;
 }
-.footerList .footerListItem a span {
+.footerListItem a span {
   position: absolute;
   transition: transform 0.5s;
 }
-.footerList .footerListItem a span:nth-child(1),
-.footerList .footerListItem a span:nth-child(3) {
+.footerListItem a span:nth-child(1),
+.footerListItem a span:nth-child(3) {
   width: 100%;
   height: 3px;
   background: #404040;
 }
-.footerList .footerListItem a span:nth-child(1) {
+.footerListItem a span:nth-child(1) {
   top: 0;
   left: 0;
   transform-origin: right;
 }
-.footerList .footerListItem a:hover span:nth-child(1) {
+.footerListItem a:hover span:nth-child(1) {
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s;
 }
 
-.footerList .footerListItem a span:nth-child(3) {
+.footerListItem a span:nth-child(3) {
   bottom: 0;
   left: 0;
   transform-origin: left;
 }
-.footerList .footerListItem a:hover span:nth-child(3) {
+.footerListItem a:hover span:nth-child(3) {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.5s;
 }
 
-.footerList .footerListItem a span:nth-child(2),
-.footerList .footerListItem a span:nth-child(4) {
+.footerListItem a span:nth-child(2),
+.footerListItem a span:nth-child(4) {
   width: 3px;
   height: 100%;
   background: #404040;
 }
-.footerList .footerListItem a span:nth-child(2) {
+.footerListItem a span:nth-child(2) {
   top: 0;
   left: 0;
   transform: scale(0);
   transform-origin: bottom;
 }
-.footerList .footerListItem a:hover span:nth-child(2) {
+.footerListItem a:hover span:nth-child(2) {
   transform: scale(1);
   transform-origin: top;
   transition: transform 0.5s;
 }
-.footerList .footerListItem a span:nth-child(4) {
+.footerListItem a span:nth-child(4) {
   top: 0;
   right: 0;
   transform: scale(0);
   transform-origin: top;
 }
-.footerList .footerListItem a:hover span:nth-child(4) {
+.footerListItem a:hover span:nth-child(4) {
   transform: scale(1);
   transform-origin: bottom;
   transition: transform 0.5s;
@@ -113,12 +113,12 @@ footer {
 .google:hover span {
   background: #dd4b39;
 }
-.footerList .footerListItem a .twitter {
+.footerListItem a .twitter {
   color: #1da1f2;
 }
-.footerList .footerListItem a:hover:nth-child(3) {
+.footerListItem a:hover:nth-child(3) {
   color: #c32aa3;
 }
-.footerList .footerListItem a:hover:nth-child(4) {
+.footerListItem a:hover:nth-child(4) {
   color: #dd4b39;
 }
