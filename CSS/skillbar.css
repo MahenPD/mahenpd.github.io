@@ -111,3 +111,17 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerSkill {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+}
