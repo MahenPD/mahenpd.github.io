@@ -13,17 +13,6 @@
   box-sizing: border-box;
 }
 
-/* body {
-  display: grid;
-  place-items: center;
-  grid-gap: var(--space);
-  margin: 0 auto;
-  padding: var(--space);
-  font-family: "Sura", sans-serif;
-  color: white;
-  background-color: rgb(29, 30, 34);
-} */
-
 .promo {
   position: relative;
   cursor: pointer;

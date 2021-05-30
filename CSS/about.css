@@ -30,7 +30,6 @@
 }
 
 :root {
-  /* --secondary-color: #151226; */
   --secondary-color: #141e30;
   --contrast-color: radial-gradient(
     ellipse at bottom,
@@ -41,7 +40,6 @@
 
 body {
   background-color: #000000;
-  /* background: linear-gradient(to right, #24243e, #141e30, #0f0c29); */
 }
 
 .overlay {
@@ -197,13 +195,11 @@ h1 {
 }
 
 .container__profileCard .wrapper img {
-  /* position: relative; */
   z-index: 20;
   border-radius: 50%;
   height: 250px;
   width: 200px;
   border: 5px solid #fff;
-  /* object-fit: contain; */
   margin-top: 25px;
   transition: all 0.3s ease;
 }
@@ -281,5 +277,9 @@ h1 {
     align-items: center;
     justify-content: center;
     height: auto;
+  }
+
+  .container_outer_img {
+    padding-left: 0px;
   }
 }

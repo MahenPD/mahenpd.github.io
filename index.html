@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./CSS/images.css">
     <link rel="stylesheet" href="./CSS/button.css">
     <link rel="stylesheet" href="./CSS/index_footer.css">
-    <link rel="stylesheet" href="./CSS/loader.css">☻
+    <link rel="stylesheet" href="./CSS/loader.css">
     <script rel="text/javascript" src="./JS/navbar.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -39,20 +39,25 @@
 
         $(window).load(function () {
             // Animate loader off screen
-            $(".loader").fadeOut("slow");;
+            setTimeout(function () {
+                $(".loader").fadeOut("slow");
+                $(".loader_wrapper").fadeOut("slow");
+            }, 1000)
         });
     </script>
 </head>
 
 <body>
-    <div class="loader">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="shadow"></div>
-        <div class="shadow"></div>
-        <div class="shadow"></div>
-        <span>Loading</span>
+    <div class="loader_wrapper">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <span>Loading</span>
+        </div>
     </div>
     <header>
         <div class="menu-toggle" id="hamburger">
