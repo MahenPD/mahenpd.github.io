@@ -36,8 +36,7 @@
   height: 250px;
   display: flex;
   flex-direction: row;
-  /* border-radius: 25px; */
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
 }
 
 .card h2 {

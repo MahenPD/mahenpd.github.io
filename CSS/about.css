@@ -39,6 +39,8 @@
 }
 
 body {
+  animation: expand 0.8s ease forwards;
+  transition: all 0.8s ease;
   background-color: #000000;
 }
 
@@ -93,6 +95,7 @@ body {
 
 .par {
   height: auto;
+  padding-right: 100px;
   overflow: hidden;
 }
 
@@ -106,18 +109,15 @@ body {
 .title > h1 {
   font-size: 70px;
   color: var(--contrast-color);
-  transform: translateY(100px);
   font-family: "CoreCircus", sans-serif;
-  animation: slideUp 0.8s ease forwards 0.5s;
-  letter-spacing: -5px;
 }
 
 h1 {
   font-size: 50px;
   color: var(--contrast-color);
   margin-bottom: 20px;
-  /* transform: translateY(100px); */
-  /* animation: slideUp 0.8s ease forwards 0.5s; */
+  transform: translateY(100px);
+  animation: slideUp 0.8s ease forwards 0.5s;
 }
 
 @keyframes slideIn {
@@ -149,6 +149,8 @@ h1 {
 
 .bgColor {
   background-color: #fc0;
+  animation: expand 0.8s ease forwards;
+  transition: all 0.8s ease;
 }
 
 .headerstyle {
@@ -238,6 +240,8 @@ h1 {
 .whoIAm {
   height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   max-width: 120rem;
   margin: auto;
@@ -281,5 +285,40 @@ h1 {
 
   .container_outer_img {
     padding-left: 0px;
+  }
+
+  .headerstyle > h1 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .title > h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .par > p {
+    text-align: center;
+  }
+
+  .par {
+    padding-right: 0px;
+  }
+
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .container_outer_img {
+    padding-left: 0px;
+  }
+
+  .headerstyle > h1 {
+    margin-top: 30px;
   }
 }
