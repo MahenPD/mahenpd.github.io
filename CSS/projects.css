@@ -177,12 +177,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-self: center;
+  align-items: center;
   transform: rotateY(180deg);
 }
 
 .flip-card-back > h1 {
   text-transform: uppercase;
+  color: #fc0;
 }
 
 .titleHeader {
