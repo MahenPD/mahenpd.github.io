@@ -24,7 +24,7 @@
 }
 
 .title {
-  --font-size: calc(var(--size) / 10);
+  --font-size: calc(var(--size) / 12);
 
   display: flex;
   align-items: center;

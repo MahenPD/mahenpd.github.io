@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 @font-face {
   font-family: "CoreCircus";
@@ -17,8 +17,15 @@ html {
   height: 100%;
 }
 
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
 
 .wrapper {
   height: 100%;
@@ -36,11 +43,26 @@ html {
   font-size: 25px;
   color: aliceblue;
   padding-top: 1em;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .subHeading {
   margin-top: 2em;
+}
+
+.mooonimg {
+  max-width: 450px;
+  max-height: 450px;
+}
+
+.moon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mooonimg:hover {
+  transform: rotate(360deg);
+  transition: transform 0.7s ease-in-out;
 }
 
 .page_container > h2 {
